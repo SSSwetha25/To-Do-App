@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Light mode */
+body.light {
+  background-color: #f9f9f9;
+  color: #111111;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #585858;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #dc545433;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button.add {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.add:hover {
+    background-color: #008fcc;
+  }
+  
+  .task {
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  button.complete {
+    background-color: #28a745;
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  .toggle-mode {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .toggle-mode:hover {
+    background-color: #444;
+  }
+  
+  /* Optional: Light mode overrides */
+  .light {
+    background-color: #f4f4f4;
+    color: #111;
+  }
+  
+  .light .toggle-mode {
+    border: 1px solid #111;
+    color: #111;
+  }
+  
+  .light .toggle-mode:hover {
+    background-color: #ddd;
+  }
