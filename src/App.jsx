@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className={`min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-black"} flex items-center justify-center p-4`}>
-      <div className="w-full max-w-md p-6 rounded-lg shadow-lg bg-white dark:bg-gray-800">
+      <div className={` ${darkMode ? "w-full max-w-md p-6 rounded-lg shadow-lg bg-white dark:bg-gray-800" : "w-full max-w-md p-6 rounded-lg shadow-lg bg-white oklch(95.4% 0.038 75.164)"}`} >
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-2xl font-bold">Task Manager</h1>
           <button
@@ -42,12 +42,12 @@ function App() {
           </button>
         </div>
 
-        <div className="flex mb-4">
+        <div className={`flex mb-4 rounded-lg ${darkMode ? "dark:bg-gray-700 dark:border-gray-600 dark:text-white " : "bg-white text-gray-900 border border-gray-300 "} `}>
           <input
             type="text"
             value={task}
             onChange={(e) => setTask(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 "
           />
           <button
             onClick={(e) => {
