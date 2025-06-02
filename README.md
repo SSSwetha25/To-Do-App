@@ -13,6 +13,6 @@ A simple and responsive task manager built using **React**. It allows users to a
 ## 🛠️ Tech Stack
 
 - React (with Hooks)
-- CSS for styling
+- Tailwind CSS for styling
 
 
